@@ -23,6 +23,28 @@
         }
 
         /// <summary>
+        /// Tries to get the value at the JSON pointer path.
+        /// </summary>
+        /// <typeparam name="T">Result Type</typeparam>
+        /// <param name="source">The source object, can be JSON string, dynamic object, or POCO</param>
+        /// <param name="path">The JSON pointer path. see: https://tools.ietf.org/html/rfc6901 </param>
+        /// <param name="result">The result if path exists.</param>
+        /// <returns></returns>
+        public static bool TryGet<T>(object source, string path, out T result)
+        {
+            try
+            {
+                result = Get<T>(source, path);
+                return true;
+            }
+            catch (ArgumentException)
+            {
+                result = default(T);
+                return false;
+            }
+        }
+
+        /// <summary>
         /// Sets the value at the JSON pointer path.
         /// </summary>
         /// <typeparam name="T">origin Type</typeparam>

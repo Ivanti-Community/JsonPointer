@@ -1,7 +1,6 @@
 ﻿namespace JsonPointerTests
 {
     using System;
-    using System.CodeDom;
     using System.Collections.Generic;
     using JsonPointer;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -10,6 +9,7 @@
     public class ExampleTests
     {
         [TestMethod]
+        [TestCategory("Unit")]
         public void TestMethod1()
         {
             var obj = @"{ foo: 1, bar: { baz: 2}, qux: [3, 4, 5]}";
@@ -23,7 +23,6 @@
         }
 
         [TestMethod]
-        [Owner("jacob.bair@shavlik.com")]
         [TestCategory("Unit")]
         public void ReplacePropertyUsingSet()
         {
@@ -35,7 +34,6 @@
         }
 
         [TestMethod]
-        [Owner("jacob.bair@shavlik.com")]
         [TestCategory("Unit")]
         public void AddItemToCollectionUsingSet()
         {
@@ -50,7 +48,6 @@
         }
 
         [TestMethod]
-        [Owner("jacob.bair@shavlik.com")]
         [TestCategory("Unit")]
         [ExpectedException(typeof(ArgumentException))]
         public void MissingPropertyThrowsArgumentException()
@@ -60,7 +57,6 @@
         }
 
         [TestMethod]
-        [Owner("jacob.bair@shavlik.com")]
         [TestCategory("Unit")]
         public void Example2Test()
         {
@@ -82,7 +78,6 @@
         }
 
         [TestMethod]
-        [Owner("jacob.bair@shavlik.com")]
         [TestCategory("Unit")]
         public void ExampleCollectionTest()
         {

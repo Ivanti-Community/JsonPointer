@@ -18,11 +18,18 @@ JsonPointer.Get<int>(obj, "/qux/1");   // returns 4
 JsonPointer.Get<int>(obj, "/qux/2");   // returns 5
 JsonPointer.Get<int>(obj, "/quo");     // throws ArgumentException
 
+// if you want to test if JSON pointer path is valid
+int result;
+if(JsonPointer.TryGet<int>(obj, "/quo", out result))
+{
+	// only if result was found
+}
+
 obj = JsonPointer.Set(obj, "/foo", 6);   // sets obj.foo = 6;
 obj = JsonPointer.Set(obj, "/qux/-", 6); // sets obj.qux = [3, 4, 5, 6]
 ```
 
-```charp
+```csharp
 public class Book
 {
     public string Title { get; set; }
@@ -30,20 +37,20 @@ public class Book
 }
 
 var sample = @"{
-  "books": [
+  'books': [
     {
-      "title" : "The Great Gatsby",
-      "author" : "F. Scott Fitzgerald"
+      'title' : 'The Great Gatsby',
+      'author' : 'F. Scott Fitzgerald'
     },
     {
-      "title" : "The Grapes of Wrath",
-      "author" : "John Steinbeck"
+      'title' : 'The Grapes of Wrath',
+      'author' : 'John Steinbeck'
     }
   ]
-}"
+}";
 
 var author = JsonPointer.Get<string>(sample, "/books/1/author"); // returns "John Steinbeck"
-var book = JsonPointer.Get<string>(sample, "/books/1");          // returns first book
+var book = JsonPointer.Get<string>(sample, "/books/1");          // returns second book (zero indexed array)
 var collection = JsonPointer.Get<List<Book>>(sample, "/books");  // returns List<Book> with two items
 
 // adds another book to end of collection
