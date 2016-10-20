@@ -10,7 +10,7 @@
     {
         [TestMethod]
         [TestCategory("Unit")]
-        public void TestMethod1()
+        public void Example()
         {
             var obj = @"{ foo: 1, bar: { baz: 2}, qux: [3, 4, 5]}";
 
