@@ -2,12 +2,12 @@
 <package >
   <metadata>
     <id>JsonPointer</id>
-    <version>$version$</version>
+    <version>1.0.0</version>
     <title>JsonPointer - Implementation of RFC 6901</title>
     <authors>Jacob Bair</authors>
-    <projectUrl>http://livetfs.development.local/tfs/DevelopmentCollection/VStar/_git/SQSCS</projectUrl>
-    <licenseUrl></licenseUrl>
-    <iconUrl></iconUrl>
+    <projectUrl>https://github.com/jakebair/JsonPointer</projectUrl>
+    <licenseUrl>https://github.com/jakebair/JsonPointer/raw/master/LICENSE</licenseUrl>
+    <iconUrl>https://github.com/jakebair/JsonPointer/raw/master/icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>
       Suppose you have a nested object inside a JSON structure that you would like to pull out and cast,
