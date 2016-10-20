@@ -1,4 +1,4 @@
-# JSON Pointer for C#
+# JSON Pointer for C&#35;
 
 This is an implementation of [JSON Pointer](http://tools.ietf.org/html/draft-ietf-appsawg-json-pointer-08).
 
