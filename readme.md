@@ -28,7 +28,7 @@ if(JsonPointer.TryGet<int>(obj, "/quo", out result))
 obj = JsonPointer.Set(obj, "/foo", 6);   // sets obj.foo = 6;
 obj = JsonPointer.Set(obj, "/qux/-", 6); // sets obj.qux = [3, 4, 5, 6]
 ```
-
+### Another example:
 ```csharp
 public class Book
 {
