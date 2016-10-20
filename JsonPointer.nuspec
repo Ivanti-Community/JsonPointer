@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>JsonPointer</id>
+    <version>$version$</version>
+    <title>JsonPointer - Implementation of RFC 6901</title>
+    <authors>Jacob Bair</authors>
+    <projectUrl>http://livetfs.development.local/tfs/DevelopmentCollection/VStar/_git/SQSCS</projectUrl>
+    <licenseUrl></licenseUrl>
+    <iconUrl></iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      Suppose you have a nested object inside a JSON structure that you would like to pull out and cast,
+      or that you would like to manipulate the JSON by modifying a property, adding a new property, or even adding a new element to a collection 
+      this project gives you a simple interface to perfom that process
+    </description>
+    <copyright>Copyright 2016 - Jacob Bair</copyright>
+    <dependencies>
+      <dependency id="Newtonsoft.Json" version="9.0.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="JsonPointer\bin\Release\JsonPointer.dll" target="lib/net462" />
+  </files>
+</package>
