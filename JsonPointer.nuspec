@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>JsonPointer</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>JsonPointer</title>
     <authors>Jacob Bair</authors>
     <projectUrl>https://github.com/jakebair/JsonPointer</projectUrl>
@@ -17,6 +17,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="JsonPointer\bin\Release\JsonPointer.dll" target="lib/net462" />
+    <file src="JsonPointer\bin\Release\JsonPointer.dll" target="lib/net461" />
   </files>
 </package>
