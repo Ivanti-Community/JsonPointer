@@ -61,7 +61,7 @@ sample = JsonPointer.Set(sample, "/books/-", new Book { Title = "Jayne Eyre", Au
 
 Jacob Bair <jacob.bair@landesk.com>
 
-(c) 2016 - LANDESK Inc. 
+&copy; 2016 - LANDESK Inc. 
 
 ## License
 
