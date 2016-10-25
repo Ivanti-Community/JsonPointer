@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>JsonPointer</id>
+    <version>1.0.3</version>
+    <title>JsonPointer</title>
+    <authors>Jacob Bair</authors>
+    <projectUrl>https://github.com/LANDesk/JsonPointer</projectUrl>
+    <licenseUrl>https://github.com/LANDesk/JsonPointer/raw/master/LICENSE.md</licenseUrl>
+    <iconUrl>https://github.com/LANDesk/JsonPointer/raw/master/icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>.NET Implementation of RFC 6901, which allows for referencing sections of JSON documents</summary>
+    <description>Suppose you have a nested object inside a JSON structure that you would like to pull out and cast, or that you would like to manipulate the JSON by modifying a property, adding a new property, or even adding a new element to a collection this project gives you a simple interface to perform that process.</description>
+    <copyright>Copyright 2016 - LANDESK Inc.</copyright>
+    <dependencies>
+      <dependency id="Newtonsoft.Json" version="9.0.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="JsonPointer\bin\Release\JsonPointer.dll" target="lib/net462" />
+  </files>
+</package>
