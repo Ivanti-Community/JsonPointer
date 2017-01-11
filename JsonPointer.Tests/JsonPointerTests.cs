@@ -176,14 +176,6 @@
 
         [TestMethod]
         [TestCategory("Unit")]
-        public void PointToPropertyWithEmptyKey()
-        {
-            var sample = GetJsonObject();
-            Assert.AreEqual(sample[""], JsonPointer.Get<JToken>(sample, "/"));
-        }
-
-        [TestMethod]
-        [TestCategory("Unit")]
         public void PointToTokenWithEmbeddedSlash()
         {
             var sample = GetJsonObject();
