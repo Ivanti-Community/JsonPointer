@@ -7,6 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonPointer", "JsonPointer\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonPointerTests", "JsonPointer.Tests\JsonPointerTests.csproj", "{89BF58CA-E29D-4E31-9EC7-91701B516E0F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B8CE1396-194B-49CC-8ACD-30AA307E650E}"
+	ProjectSection(SolutionItems) = preProject
+		JsonPointer.nuspec = JsonPointer.nuspec
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

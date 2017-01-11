@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>JsonPointer</id>
-    <version>1.0.4</version>
+    <version>1.0.5</version>
     <title>JsonPointer</title>
     <authors>Jacob Bair</authors>
     <projectUrl>https://github.com/LANDesk/JsonPointer</projectUrl>
